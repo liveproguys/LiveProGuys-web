@@ -1,4 +1,4 @@
-# School-web-site
+# CodeClan-web-site
 Official website for Jarkugan SS
 Contact us : jahongirmutual@gmail.com
 Email : codeclan@nkcowebscool.netlify.app
