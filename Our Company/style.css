@@ -1,0 +1,224 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* dark background for contrast */
+  color: #fff;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header Section */
+header {
+  background-color: #1c1c1c;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #39FF14; /* Neon Green */
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14; /* Neon Glow */
+}
+
+header .logo span {
+  color: #FF007F; /* Neon Pink */
+}
+
+header .logo strong {
+  color: #00FFFF; /* Neon Cyan */
+}
+
+header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.projects-list {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.projects-list a, .projects-list li {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Neon Glow */
+}
+
+.projects-list a:hover, .projects-list li:hover {
+  color: #FF007F; /* Neon Pink */
+  text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #FF007F; /* Neon Glow */
+}
+
+/* About Section */
+.about {
+  background-color: #1c1c1c;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #39FF14; /* Neon Green */
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14; /* Neon Glow */
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 30px;
+  background-color: #121212; /* Dark background for contrast */
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #00FFFF; /* Neon Cyan */
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF; /* Neon Glow */
+}
+
+.projects p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #1c1c1c;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #FF007F; /* Neon Pink */
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F; /* Neon Glow */
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Footer Section */
+footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 40px 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #39FF14; /* Neon Green */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14; /* Neon Glow */
+}
+
+footer a:hover {
+  color: #FF007F; /* Neon Pink */
+  text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14, 0 0 30px #FF007F; /* Neon Glow */
+}
+
+/* Dark mode theme toggle button */
+#theme-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF;
+}
+
+/* Media Queries (Responsive Design) */
+@media (max-width: 768px) {
+  .projects-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .logo {
+    margin-bottom: 10px;
+  }
+
+  .about, .projects, .contact {
+    padding: 40px 20px;
+  }
+
+  .about h2, .projects h2, .contact h2 {
+    font-size: 2rem;
+  }
+
+  .about p, .projects p, .contact p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h2, .projects h2, .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p, .projects p, .contact p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  footer a {
+    font-size: 1rem;
+  }
+}
