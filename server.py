@@ -4,6 +4,6 @@ app=Flask(__name__)
 def home():
     return render_template("index.html")
 @app.route("/abaut")
-def home():
+def abaut():
     return render_template("Portfilio.html")
 app.run(debug=True,host="0.0.0.0")
