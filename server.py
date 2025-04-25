@@ -7,3 +7,6 @@ def home():
 def abaut():
     return render_template("Portfilio.html")
 app.run(debug=True,host="0.0.0.0")
+@app.errorhandler(404)
+def handle(error):
+    return render_template('error.html'), 404
